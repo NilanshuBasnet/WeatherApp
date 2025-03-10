@@ -7,18 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <input type="text" id="city-name" placeholder="Enter city name">
-        <button><img src="" id="search-button" alt="Search Icon"></button>
-    </div>
-    <div>
-        <div>
+    <div class="main-container">
+        <div class="search-container">
+            <input type="text" id="city-name" placeholder="Enter city name">
+            <button id="search-button"><img src="https://cdn-icons-png.flaticon.com/512/2811/2811790.png" class="search-icon" alt="Search Icon"></button>
+        </div>
+        <div class="weather-details">
             <img src="" alt="weatherIcon">
             <h1>26°C</h1>
             <p>Rainy Weather Today</p>
         </div>
-        <img src="" class="location-icon" alt="Location Icon"/><p> Kathmandu, NEPAL</p>
-        <img src="" class="calendar-icon" alt="Calendar Icon"/><p> 11 March, 2025, <b>10:00 AM</b></p>
+        <div class="city-details">
+            <div class="detail-item">
+                <img src="" class="location-icon" alt="Location Icon"/>
+                <p> Kathmandu, NEPAL</p>
+            </div>
+            <div class="detail-item">
+            <img src="" class="calendar-icon" alt="Calendar Icon"/>
+            <p> 11 March, 2025, <b>10:00 AM</b></p>
+            </div>
+        </div>
     </div>
 <script src="script.js"></script>
 </body>
