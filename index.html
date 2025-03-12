@@ -12,21 +12,22 @@
             <input type="text" id="city-name" placeholder="Enter city name" maxlength="30">
             <button id="search-button"><img src="https://cdn-icons-png.flaticon.com/512/2811/2811790.png" class="search-icon" alt="Search Icon"></button>
         </div>
-        <div class="weather-details">
-            <img src="https://cdn-icons-png.flaticon.com/512/12607/12607703.png" class="weather-icon" alt="weatherIcon">
-            <h1>26°C</h1>
-            <p>Rainy Weather Today</p>
+        <div id="weather-details" class="weather-details hidden">
+            <img id="weather-icon" src="" class="weather-icon" alt="weatherIcon">
+            <h1 id="city-temperature"></h1>
+            <p id="city-weather"></p>
         </div>
-        <div class="city-details">
+        <div id="city-details" class="city-details hidden">
             <div class="detail-item">
                 <img src="https://cdn-icons-png.flaticon.com/512/4922/4922177.png" class="detail-icon" alt="Location Icon"/>
-                <p> Kathmandu, NEPAL</p>
+                <p id="city-nameDisplay"></p>
             </div>
-            <div class="detail-item">
+            <div class="detail-item hidden">
             <img src="https://cdn-icons-png.flaticon.com/512/9307/9307921.png" class="detail-icon" alt="Calendar Icon"/>
-            <p> 11 March, 2025, <b>10:00 AM</b></p>
+            <p id="date-time"></p>
             </div>
         </div>
+        <p id="error-msg" class="hidden">City not found. Please try again!</p>
     </div>
 <script src="script.js"></script>
 </body>

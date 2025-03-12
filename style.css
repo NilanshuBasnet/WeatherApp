@@ -5,7 +5,8 @@
 }
 
 body{
-    background-color: #334155;
+    background-image:url(https://cdn.pixabay.com/photo/2018/08/23/07/35/new-year-background-3625405_1280.jpg);
+    background-size:cover;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -17,16 +18,27 @@ body{
     display: flex;
     flex-direction: column; 
     align-items: center;
-    background-color: aqua;
-    padding: 10px;
+    padding: 15px;
+    margin:10px;
+    border-radius: 20px;
+    color:white;
+
+    background: rgba(255, 255, 255, 0.1); /* Transparent white */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
+.hidden{
+    display:none !important;
+}
 
 .search-container{
     display:flex;
     align-items: center;
     background-color:white;
     padding: 10px;
+    margin: 10px;
     border-radius: 100px;
     min-width:350px;
 }
@@ -60,6 +72,9 @@ body{
 }
 .weather-details h1{
     font-size: 80px;
+}
+.weather-details p{
+    text-transform:capitalize;
 }
 
 
